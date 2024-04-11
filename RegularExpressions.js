@@ -52,8 +52,22 @@ console.log(reg.test('A')); */
 // \w - words/letters
 // \s - spaces
 
-const reg = /\d/;
+/* const reg = /\d/g;
 // console.log(reg.test('123'));
 // console.log(reg.test(123));
 // console.log(reg.test('abc'));
 // console.log(reg.test('abc123'));
+console.log('abc'.match(reg));
+console.log('123'.match(reg));
+console.log('aaa1aaa'.match(reg)); */
+
+
+// Certain Pattern
+/* const str = 'My name is a1b2c3';
+console.log(str.match(/\w\d\w\d\w\d/ig)); */
+
+
+// Reverse Classes
+const str = 'a 1 b 2 c 3';
+console.log(str.match(/\D/g));
+console.log(str.match(/\W/g));
