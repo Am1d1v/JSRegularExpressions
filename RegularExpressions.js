@@ -20,7 +20,13 @@ console.log(ans.search(reg));  */
 
 
 // Match 
-const ans = prompt('Type your name');
+/* const ans = prompt('Type your name');
 
 const reg = /n/ig;
-console.log(ans.match(reg));
+console.log(ans.match(reg)); */
+
+
+// Replace
+const pass = prompt('Password');
+console.log(pass.replace(/./g, "*"));
+console.log(pass.replace(/\./g, "*"));
