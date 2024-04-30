@@ -64,17 +64,32 @@ console.log(/World$/.test('Hello A')); */
 
 
 // Multiple Strings
-const str = `1. First string
+/* const str = `1. First string
         2. Second string
     3. Third string`;
     
 console.log(str.match(/\d/m));
-console.log(str.match(/\d/gm));
+console.log(str.match(/\d/gm)); */
 
 
 // Borders
-console.log('Hello World'.match(/\bWorld\b/g));
+/* console.log('Hello World'.match(/\bWorld\b/g));
 console.log('Hello DWorld'.match(/\bWorld\b/g));
 console.log('Hello 123 234 345 456'.match(/\b\d\d\d\b/));
+ */
+
+
+// Symbols
+/* console.log('6.2'.match(/\d.\d/g));
+console.log('652'.match(/\d\.\d/g));
+console.log('/'.match(/\//)); */
+
+
+
+// Set
+console.log("12 23 34 45 55 15 65".match(/[16]5/g));
+
+// Range
+console.log("12 23 34 45 55 15 65".match(/[1-6]5/g));
 
 
