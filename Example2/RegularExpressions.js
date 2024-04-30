@@ -26,7 +26,7 @@ document.querySelector('a').setAttribute('href', `tel:+${number}`);
  */
 
 
-
+/* 
 // Show all digits
 const digits = 'lorem 1234567890 lorem lorem';
 console.log(digits.match(/\d/g));
@@ -42,5 +42,19 @@ console.log(words.match(/\w/g));
 // Show all  but digits
 const Digits = 'lorem 1234567890 lorem lorem _ _ lorem';
 console.log(Digits.match(/\D/g));
+ */
+
+
+// Strings start/end
+/* console.log(/^Hello/.test('Hello World'));
+console.log(/^A/.test('Hello World'));
+
+console.log(/World$/.test('Hello World'));
+console.log(/World$/.test('Hello A')); */
+
+// Template
+const reg = /\d\d:\d\d/;
+const str = '10:10';
+console.log(reg.test(str));
 
 
