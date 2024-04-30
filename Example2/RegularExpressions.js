@@ -53,8 +53,28 @@ console.log(/World$/.test('Hello World'));
 console.log(/World$/.test('Hello A')); */
 
 // Template
-const reg = /\d\d:\d\d/;
-const str = '10:10';
-console.log(reg.test(str));
+// const reg = /\d\d:\d\d/;
+// const str = '10:10';
+// console.log(reg.test(str));
+
+// const res = prompt('Enter Time');
+// const reg = /\d\d:\d\d/;
+// console.log(reg.test(res));
+
+
+
+// Multiple Strings
+const str = `1. First string
+        2. Second string
+    3. Third string`;
+    
+console.log(str.match(/\d/m));
+console.log(str.match(/\d/gm));
+
+
+// Borders
+console.log('Hello World'.match(/\bWorld\b/g));
+console.log('Hello DWorld'.match(/\bWorld\b/g));
+console.log('Hello 123 234 345 456'.match(/\b\d\d\d\b/));
 
 
