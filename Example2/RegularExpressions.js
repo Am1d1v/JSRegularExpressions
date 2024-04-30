@@ -91,5 +91,10 @@ console.log("12 23 34 45 55 15 65".match(/[16]5/g));
 
 // Range
 console.log("12 23 34 45 55 15 65".match(/[1-6]5/g));
+console.log('ABC DEF GH'.match(/[A-D]/g));
+console.log('ABC DEF GH 123 234 345'.match(/[A-Z0-9]/ig));
 
-
+// Exclude Range
+console.log('0 1 2 3 4 5 6 7 8 9'.match(/[^0-6]\s/g));
+console.log('0 1 2 3 4 5 6 7 8 9'.match(/[^0-6]/g));
+console.log('somemail123@gmail.com'.match(/[^\d\s]/g).join(''));
